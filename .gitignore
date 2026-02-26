@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Dependency directories
+__pypackages__/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore environment files
+*.env
+
+# Build and distribution
+build/
+dist/
+
+# Coverage data
+.coverage
+htmlcov/
+
+# Python egg
+*.egg-info/
+
+# Mac specific
+*.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Ignore any other local files
+*~
+
