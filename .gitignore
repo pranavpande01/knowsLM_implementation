@@ -6,6 +6,7 @@ __pycache__/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb
 
 # Virtual environments
 venv/
@@ -50,4 +51,7 @@ Thumbs.db
 
 # Ignore any other local files
 *~
+
+# Notebook implementation notes
+notebooks/imp.md
 
