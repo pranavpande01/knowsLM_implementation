@@ -10,6 +10,7 @@ __pycache__/
 
 # Virtual environments
 venv/
+.venv/
 env/
 
 # VSCode
@@ -30,6 +31,7 @@ __pypackages__/
 .ipynb_checkpoints/
 
 # Ignore environment files
+.env
 *.env
 
 # Build and distribution
