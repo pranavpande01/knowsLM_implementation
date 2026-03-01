@@ -40,7 +40,7 @@ async def basic_deep_crawl():
 
     async with AsyncWebCrawler() as crawler:
         start_time = time.perf_counter()
-        results = await crawler.arun(url="https://docs.crawl4ai.com", config=config)
+        results = await crawler.arun(url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=config)
 
         # Group results by depth to visualize the crawl tree
         pages_by_depth = {}
@@ -92,7 +92,7 @@ async def stream_vs_nonstream():
 
         start_time = time.perf_counter()
         results = await crawler.arun(
-            url="https://docs.crawl4ai.com", config=non_stream_config
+            url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=non_stream_config
         )
 
         print(f"  ✅ Received all {len(results)} results at once")
@@ -110,7 +110,7 @@ async def stream_vs_nonstream():
         first_result_time = None
 
         async for result in await crawler.arun(
-            url="https://docs.crawl4ai.com", config=stream_config
+            url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=stream_config
         ):
             result_count += 1
             if result_count == 1:
@@ -157,7 +157,7 @@ async def filters_and_scorers():
             verbose=True,
         )
 
-        results = await crawler.arun(url="https://docs.crawl4ai.com", config=config)
+        results = await crawler.arun(url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=config)
 
         print(f"  ✅ Crawled {len(results)} pages matching '*core*'")
         for result in results[:3]:  # Show first 3 results
@@ -194,7 +194,7 @@ async def filters_and_scorers():
             verbose=True,
         )
 
-        results = await crawler.arun(url="https://techcrunch.com", config=config)
+        results = await crawler.arun(url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=config)
 
         print(f"  ✅ Crawled {len(results)} pages after applying all filters")
         for result in results[:3]:
@@ -225,7 +225,7 @@ async def filters_and_scorers():
 
         results = []
         async for result in await crawler.arun(
-            url="https://docs.crawl4ai.com", config=config
+            url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=config
         ):
             results.append(result)
             score = result.metadata.get("score")
@@ -266,7 +266,7 @@ async def advanced_filters():
             cache_mode=CacheMode.BYPASS,
         )
 
-        results = await crawler.arun(url="https://docs.crawl4ai.com", config=config)
+        results = await crawler.arun(url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=config)
 
         print(f"  ✅ Found {len(results)} pages with relevant keywords")
         for result in results:
@@ -290,7 +290,7 @@ async def advanced_filters():
             cache_mode=CacheMode.BYPASS,
         )
 
-        results = await crawler.arun(url="https://docs.crawl4ai.com", config=config)
+        results = await crawler.arun(url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=config)
 
         print(f"  ✅ Found {len(results)} pages")
         for result in results:
@@ -334,7 +334,7 @@ async def max_pages_and_thresholds():
             cache_mode=CacheMode.BYPASS,
         )
         
-        results = await crawler.arun(url="https://docs.crawl4ai.com", config=bfs_config)
+        results = await crawler.arun(url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=bfs_config)
         
         print(f"  ✅ Crawled exactly {len(results)} pages as specified by max_pages")
         for result in results:
@@ -358,7 +358,7 @@ async def max_pages_and_thresholds():
             cache_mode=CacheMode.BYPASS,
         )
         
-        results = await crawler.arun(url="https://docs.crawl4ai.com", config=dfs_config)
+        results = await crawler.arun(url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=dfs_config)
         
         print(f"  ✅ Crawled {len(results)} pages with scores above threshold")
         for result in results:
@@ -384,7 +384,7 @@ async def max_pages_and_thresholds():
         )
         
         results = []
-        async for result in await crawler.arun(url="https://docs.crawl4ai.com", config=bf_config):
+        async for result in await crawler.arun(url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=bf_config):
             results.append(result)
             score = result.metadata.get("score", 0)
             depth = result.metadata.get("depth", 0)
@@ -441,7 +441,7 @@ async def wrap_up():
 
     async with AsyncWebCrawler() as crawler:
         async for result in await crawler.arun(
-            url="https://docs.crawl4ai.com", config=config
+            url="https://www.reddit.com/r/germany/comments/1090x8q/how_much_can_we_earn_in_berlin_through_pfand_in_a/", config=config
         ):
             results.append(result)
             score = result.metadata.get("score", 0)
