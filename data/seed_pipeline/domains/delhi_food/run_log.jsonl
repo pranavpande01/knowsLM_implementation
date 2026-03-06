@@ -1,0 +1,7 @@
+{"at": "2026-03-06T15:34:16.467009+00:00", "domain": "delhi_food", "step": "init", "seed_urls_added": 4, "seed_urls_total": 4}
+{"at": "2026-03-06T15:34:39.866487+00:00", "domain": "delhi_food", "step": "discover", "fetched_pages": 6, "new_urls": 3, "max_depth": 1, "max_pages": 6}
+{"at": "2026-03-06T15:35:00.713398+00:00", "domain": "delhi_food", "step": "ingest", "docs_attempted": 3, "docs_ingested": 3, "new_chunks": 24}
+{"at": "2026-03-06T15:35:15.055006+00:00", "domain": "delhi_food", "step": "bootstrap_labels", "positives_added": 5, "negatives_added": 2, "labels_file": "C:\\Users\\Pranav\\Desktop\\proj\\github_projects\\knowsLM_implementation\\data\\seed_pipeline\\domains\\delhi_food\\labels.jsonl"}
+{"at": "2026-03-06T15:35:36.184239+00:00", "domain": "delhi_food", "step": "train", "labels_total": 7, "pos_docs": 5, "neg_docs": 2, "vocab_size": 622, "model_path": "C:\\Users\\Pranav\\Desktop\\proj\\github_projects\\knowsLM_implementation\\data\\seed_pipeline\\domains\\delhi_food\\discriminator_model.json"}
+{"at": "2026-03-06T15:36:06.845330+00:00", "domain": "delhi_food", "step": "score", "new_scores": 24, "accept": 13, "review": 2, "reject": 9}
+{"at": "2026-03-06T15:36:20.523038+00:00", "domain": "delhi_food", "step": "promote", "promoted_chunks": 13, "promoted_urls": 2, "seed_chunks_total": 13, "seed_urls_total": 6}

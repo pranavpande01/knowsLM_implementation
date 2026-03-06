@@ -1,0 +1,160 @@
+data_root: data/seed_pipeline
+
+defaults:
+  crawl:
+    max_depth: 1
+    max_pages_per_iteration: 80
+    request_timeout_sec: 20
+    delay_sec: 0.5
+  ingest:
+    min_text_chars: 500
+    chunk_words: 220
+    chunk_overlap_words: 40
+    max_chunks_per_doc: 25
+
+domains:
+  delhi_food:
+    description: Delhi food, cafes, rooftop dining, local food culture.
+    allowed_domains:
+      - holidify.com
+      - lbb.in
+      - zomato.com
+      - food.ndtv.com
+      - delhitourism.gov.in
+      - tripadvisor.in
+      - lonelyplanet.com
+    seed_urls:
+      - https://www.holidify.com/pages/street-food-in-delhi-372.html
+      - https://lbb.in/delhi/street-food-places-delhi/
+      - https://food.ndtv.com/food-drinks/10-best-street-foods-you-must-try-in-delhi-1203672
+      - https://delhitourism.gov.in/delhitourism/tourist_place/food.jsp
+    include_keywords:
+      - delhi
+      - street food
+      - cafe
+      - rooftop
+      - old delhi
+      - chaat
+      - restaurant
+      - dine
+      - budget
+      - connaught place
+      - chandni chowk
+      - rajouri
+      - hk
+    exclude_keywords:
+      - cricket
+      - heritage site
+      - monument
+      - museum
+      - politics
+      - stock market
+      - visa
+      - weather forecast
+      - football
+      - smartphone
+      - laptop
+
+  poetry_style:
+    description: English poetry style content for response style adaptation.
+    allowed_domains:
+      - gutenberg.org
+      - poetryfoundation.org
+      - poets.org
+      - allpoetry.com
+      - poetryarchive.org
+    seed_urls:
+      - https://www.gutenberg.org/ebooks/1041
+      - https://www.gutenberg.org/ebooks/1065
+      - https://www.poetryfoundation.org/poems
+      - https://poets.org/poems
+    include_keywords:
+      - poem
+      - poetry
+      - stanza
+      - metaphor
+      - rhyme
+      - sonnet
+      - verse
+      - lyrical
+      - imagery
+      - cadence
+    exclude_keywords:
+      - breaking news
+      - sports
+      - election
+      - weather
+      - stock
+      - cryptocurrency
+      - tutorial
+      - coding interview
+      - football
+      - cricket
+
+  mahakumbh:
+    description: MahaKumbh cultural/event information with factual context.
+    allowed_domains:
+      - kumbh.gov.in
+      - prayagraj.nic.in
+      - pib.gov.in
+      - indiaculture.gov.in
+      - mygov.in
+    seed_urls:
+      - https://kumbh.gov.in/
+      - https://prayagraj.nic.in/tourist-place/sangam/
+      - https://www.pib.gov.in/
+      - https://indiaculture.gov.in/
+    include_keywords:
+      - kumbh
+      - mahakumbh
+      - prayagraj
+      - sangam
+      - pilgrimage
+      - akhara
+      - spiritual
+      - mela
+      - snan
+      - yatra
+    exclude_keywords:
+      - cricket
+      - iphone
+      - startup funding
+      - stock market
+      - real estate
+      - coding tutorial
+      - football
+      - esports
+
+  isro:
+    description: ISRO, Indian space missions, launches, updates.
+    allowed_domains:
+      - isro.gov.in
+      - pib.gov.in
+      - nari.gov.in
+      - vigyanprasar.gov.in
+      - scienceindia.in
+    seed_urls:
+      - https://www.isro.gov.in/
+      - https://www.isro.gov.in/Press.html
+      - https://www.isro.gov.in/Missions.html
+      - https://www.pib.gov.in/
+    include_keywords:
+      - isro
+      - launch
+      - satellite
+      - mission
+      - docking
+      - gslv
+      - pslv
+      - chandrayaan
+      - aditya-l1
+      - space
+    exclude_keywords:
+      - recipe
+      - cricket
+      - fashion
+      - celebrity gossip
+      - football
+      - loan
+      - shopping
+      - smartphone review
